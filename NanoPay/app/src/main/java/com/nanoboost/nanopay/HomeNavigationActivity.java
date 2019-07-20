@@ -10,6 +10,8 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+
+
 public class HomeNavigationActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener, InboxFragment.OnFragmentInteractionListener, AccountFragment.OnFragmentInteractionListener, ProductDetailsFragment.OnFragmentInteractionListener {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -50,6 +52,7 @@ public class HomeNavigationActivity extends AppCompatActivity implements HomeFra
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new HomeFragment()).commit();
         }
+        
     }
 
     @Override
