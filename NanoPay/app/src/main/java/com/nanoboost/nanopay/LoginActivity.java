@@ -344,6 +344,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             if (success) {
                 Intent homeNavigationIntent = new Intent(getBaseContext(), HomeNavigationActivity.class);
+                Boolean isSeller = mEmailView.getText().toString().contains("seller");
+                homeNavigationIntent.putExtra("isSeller", isSeller);
                 startActivity(homeNavigationIntent);
 
             } else {
