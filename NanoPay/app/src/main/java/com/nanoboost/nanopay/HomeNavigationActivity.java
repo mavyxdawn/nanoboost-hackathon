@@ -42,6 +42,13 @@ public class HomeNavigationActivity extends AppCompatActivity implements HomeFra
         setContentView(R.layout.activity_home_navigation);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+
+        //Set default fragment
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new HomeFragment()).commit();
+        }
     }
 
     @Override
