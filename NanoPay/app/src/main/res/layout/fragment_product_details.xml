@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@android:color/transparent"
+        android:text="<"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Nike Dri-FIT Long Sleeve"
+        android:layout_marginTop="430dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="10sp"
+        android:textStyle="bold"
+        android:textColor="#333"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Sleek cut plus superb comfort! In a bright, feminine Glen plaid.
+
+Wrinkle-resistant rayon blend material with plenty of stretch for easy movement.
+Carefully selected fabric for an elegant wool-like texture."
+        android:layout_marginTop="465dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textColor="#333"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:text="₱999.75"
+        android:textSize="25sp"
+        android:textColor="#333"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/Buy"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:layout_gravity="bottom"
+        android:height="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="230dp"/>
+
+
+</FrameLayout>
