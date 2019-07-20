@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 
 public class HomeNavigationActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener, InboxFragment.OnFragmentInteractionListener, AccountFragment.OnFragmentInteractionListener, ProductDetailsFragment.OnFragmentInteractionListener {
+    private boolean isSeller = false;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -24,6 +26,7 @@ public class HomeNavigationActivity extends AppCompatActivity implements HomeFra
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     selectedFragment = new HomeFragment();
+                    ((HomeFragment) selectedFragment).isSeller = isSeller;
                     break;
                 case R.id.navigation_notifications:
                     selectedFragment = new InboxFragment();
@@ -50,7 +53,7 @@ public class HomeNavigationActivity extends AppCompatActivity implements HomeFra
         //Set default fragment
         if (savedInstanceState == null) {
             HomeFragment homeFragment = new HomeFragment();
-            Boolean isSeller = getIntent().getBooleanExtra("isSeller", false);
+            isSeller = getIntent().getBooleanExtra("isSeller", false);
             homeFragment.isSeller = isSeller;
             Fragment initialFragment;
             if (isSeller) {
