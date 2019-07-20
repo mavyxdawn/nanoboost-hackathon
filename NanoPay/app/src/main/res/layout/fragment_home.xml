@@ -14,197 +14,217 @@
         android:textSize="27sp"/>
 
     <GridLayout
-        android:layout_marginTop="130px"
         android:layout_width="match_parent"
         android:layout_height="1450px"
-        android:columnCount="2"
-        android:rowCount="2"
+        android:layout_marginTop="130px"
         android:alignmentMode="alignMargins"
+        android:columnCount="2"
         android:columnOrderPreserved="true"
         android:padding="8dp"
-        >
+        android:rowCount="2">
         //Item 1
+
+        //Item 2
+
         <android.support.v7.widget.CardView
             android:id="@+id/CardView1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:elevation="8dp"
-            android:background="@color/cardview_dark_background">
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/titleImage1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
                 android:scaleType="center"
-                tools:src="@tools:sample/backgrounds/scenic"
-                android:layout_marginBottom="60dp"/>
+                android:tag="0"
+                tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
                 android:id="@+id/titleText1"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/sellerText1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:tag="2"
                 android:text="Lazada"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/priceText1"
-                android:layout_height="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
         </android.support.v7.widget.CardView>
-        //Item 2
+
         <android.support.v7.widget.CardView
             android:id="@+id/CardView2"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:elevation="8dp"
-            android:background="@color/cardview_dark_background">
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/titleImage2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
                 android:scaleType="center"
-                tools:src="@tools:sample/backgrounds/scenic"
-                android:layout_marginBottom="60dp"/>
+                android:tag="0"
+                tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
                 android:id="@+id/titleText2"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/sellerText2"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:tag="2"
                 android:text="Lazada"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/priceText2"
-                android:layout_height="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
         </android.support.v7.widget.CardView>
         //Item 3
+
         <android.support.v7.widget.CardView
             android:id="@+id/CardView3"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:elevation="8dp"
-            android:background="@color/cardview_dark_background">
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/titleImage3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
                 android:scaleType="center"
-                tools:src="@tools:sample/backgrounds/scenic"
-                android:layout_marginBottom="60dp"/>
+                android:tag="0"
+                tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
                 android:id="@+id/titleText3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/sellerText3"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:tag="2"
                 android:text="Lazada"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/priceText3"
-                android:layout_height="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
         </android.support.v7.widget.CardView>
         //Item 1
+
         <android.support.v7.widget.CardView
             android:id="@+id/CardView4"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:elevation="8dp"
-            android:background="@color/cardview_dark_background">
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardview_dark_background"
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/titleImage4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
                 android:scaleType="center"
-                tools:src="@tools:sample/backgrounds/scenic"
-                android:layout_marginBottom="60dp"/>
+                android:tag="0"
+                tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
                 android:id="@+id/titleText4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/sellerText4"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:tag="2"
                 android:text="Lazada"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/priceText4"
-                android:layout_height="20dp"
                 android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp"
-                android:layout_gravity="bottom"/>
+                android:textSize="14dp" />
 
         </android.support.v7.widget.CardView>
 
