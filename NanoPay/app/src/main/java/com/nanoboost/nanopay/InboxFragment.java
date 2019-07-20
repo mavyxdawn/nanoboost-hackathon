@@ -1,9 +1,12 @@
 package com.nanoboost.nanopay;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +20,7 @@ import android.view.ViewGroup;
  * Use the {@link InboxFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class InboxFragment extends Fragment {
+public class InboxFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -89,6 +92,40 @@ public class InboxFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        for(int i=0; i<6; i++) {
+            String buttonID = "MessageView" + (i+1);
+            int resID = getResources().getIdentifier(buttonID, "id", getActivity().getApplicationContext().getPackageName());
+            View cardView = getView().findViewById(resID);
+            cardView.setOnClickListener(this);
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        String tag = view.getTag().toString();
+        if (tag.equals("2")) {
+            return;
+        }
+
+        if (tag.equals("1")) {
+            showPopup("Product Approved", "Your product has been approved by the user and the payment has been credited to your account.");
+        } else if (tag.equals("3")) {
+            showPopup("Replacement Requested", "The user requested a replacement for their product. You must comply with this or no payment will be credited and your item will be withheld.");
+        }
+    }
+
+    private void showPopup(String title, String message) {
+        new AlertDialog.Builder(this.getContext())
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
     }
 
     /**
