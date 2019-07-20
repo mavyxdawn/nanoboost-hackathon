@@ -10,6 +10,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -31,6 +38,8 @@ public class HomeFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private List<ProductInterface> products;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -113,6 +122,11 @@ public class HomeFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
+        products = getAvailableProducts();
+        modifyView(getView().findViewById(R.id.CardView1), 0);
+        modifyView(getView().findViewById(R.id.CardView2), 1);
+        modifyView(getView().findViewById(R.id.CardView3), 2);
+        modifyView(getView().findViewById(R.id.CardView4), 3);
     }
 
 
@@ -128,7 +142,27 @@ public class HomeFragment extends Fragment {
         transaction.commit();
     }
 
-    private ProductInterface productForCellID(int identifier) {
-        return new MockProduct();
+    private void modifyView(View cardView, int index) {
+        ProductInterface product = products.get(index);
+        ImageView imageView = cardView.findViewWithTag("0");
+        int resourceID = getResources().getIdentifier(product.imageName(), "drawable", this.getContext().getPackageName());
+        imageView.setImageResource(resourceID);
+        TextView titleView = cardView.findViewWithTag("1");
+        titleView.setText(product.productName());
+        TextView dealView = cardView.findViewWithTag("2");
+        dealView.setText(product.buyerName());
+        TextView priceView = cardView.findViewWithTag("3");
+        priceView.setText(product.priceString());
+        cardView.setTag(index);
+    }
+
+    private ArrayList <ProductInterface> getAvailableProducts() {
+        ArrayList<ProductInterface> availableProducts = new ArrayList<ProductInterface>();
+        availableProducts.add(new MockProduct("Watch", "watch", "₱100,000", 24, "Nomi Cortez", 0));
+        availableProducts.add(new MockProduct("Backpack", "backpack", "₱1,000", 12, "Reuben Mercado", 0));
+        availableProducts.add(new MockProduct("iPhone", "iphone", "₱32,000", 32, "Vanjelyn Roque", 0));
+        availableProducts.add(new MockProduct("Speaker", "speaker", "₱15,000", 55, "Juls Andrada", 0));
+
+        return availableProducts;
     }
 }
