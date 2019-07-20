@@ -8,10 +8,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pending"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
-        android:textSize="27sp"/>
+        android:text="Pending"
+        android:textSize="27sp"
+        android:textColor="#333"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -33,7 +34,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:background="@color/cardview_dark_background"
-            android:elevation="8dp">
+            app:cardElevation="0dp">
 
             <ImageView
                 android:id="@+id/titleImage12"
@@ -42,7 +43,7 @@
                 android:layout_marginBottom="60dp"
                 android:scaleType="centerCrop"
                 android:tag="0"
-                tools:src="@tools:sample/backgrounds/scenic" />
+                tools:src="@tools:sample/backgrounds/scenic"/>
 
             <TextView
                 android:id="@+id/titleText1"
@@ -51,7 +52,8 @@
                 android:layout_gravity="bottom"
                 android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/sellerText1"
@@ -69,7 +71,8 @@
                 android:layout_gravity="bottom"
                 android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp" />
+                android:textSize="15dp"
+                android:textColor="#00c368"/>
 
         </android.support.v7.widget.CardView>
 
@@ -83,7 +86,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:background="@color/cardview_dark_background"
-            android:elevation="8dp">
+            app:cardElevation="0dp">
 
             <ImageView
                 android:id="@+id/titleImage2"
@@ -101,7 +104,8 @@
                 android:layout_gravity="bottom"
                 android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/sellerText2"
@@ -119,11 +123,10 @@
                 android:layout_gravity="bottom"
                 android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp" />
+                android:textSize="15dp"
+                android:textColor="#00c368"/>
 
         </android.support.v7.widget.CardView>
-        //Item 3
-
         <android.support.v7.widget.CardView
             android:id="@+id/CardView3"
             android:layout_width="0dp"
@@ -134,7 +137,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:background="@color/cardview_dark_background"
-            android:elevation="8dp">
+            app:cardElevation="0dp">
 
             <ImageView
                 android:id="@+id/titleImage3"
@@ -152,7 +155,8 @@
                 android:layout_gravity="bottom"
                 android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/sellerText3"
@@ -170,10 +174,10 @@
                 android:layout_gravity="bottom"
                 android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp" />
+                android:textSize="15dp"
+                android:textColor="#00c368"/>
 
         </android.support.v7.widget.CardView>
-        //Item 4
         <android.support.v7.widget.CardView
             android:id="@+id/CardView4"
             android:layout_width="0dp"
@@ -184,7 +188,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:background="@color/cardview_dark_background"
-            android:elevation="8dp">
+            app:cardElevation="0dp">
 
             <ImageView
                 android:id="@+id/titleImage4"
@@ -202,7 +206,8 @@
                 android:layout_gravity="bottom"
                 android:tag="1"
                 android:text="Gray Jacket"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/sellerText4"
@@ -220,11 +225,10 @@
                 android:layout_gravity="bottom"
                 android:tag="3"
                 android:text="₱999.75"
-                android:textSize="14dp" />
+                android:textSize="15dp"
+                android:textColor="#00c368"/>
 
         </android.support.v7.widget.CardView>
-
-
     </GridLayout>
 
 </RelativeLayout>
