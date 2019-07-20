@@ -178,7 +178,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             availableProducts.add(new MockProduct("Airpods", "airpods", "₱10,000", 19, "Roy Tumlos", 0));
             availableProducts.add(new MockProduct("Headphones", "headphone", "₱13,000", 87, "Herbert Domingo", 1));
             availableProducts.add(new MockProduct("Long Sleeves", "longsleeve", "₱2,000", 50, "Hermie Monterde", 2));
-            availableProducts.add(new MockProduct("Microphone", "microphone", "₱5,000", 31, "Robert Vitangcol", 0));
+            availableProducts.add(new MockProduct("Floor Stand", "microphone", "₱5,000", 31, "Robert Vitangcol", 0));
         } else {
             availableProducts.add(new MockProduct("Watch", "watch", "₱100,000", 24, "Nomi Cortez", 0));
             availableProducts.add(new MockProduct("Backpack", "backpack", "₱1,000", 12, "Reuben Mercado", 0));
