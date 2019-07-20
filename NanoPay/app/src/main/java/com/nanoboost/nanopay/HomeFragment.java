@@ -127,4 +127,8 @@ public class HomeFragment extends Fragment {
 
         transaction.commit();
     }
+
+    private ProductInterface productForCellID(int identifier) {
+        return new MockProduct();
+    }
 }
