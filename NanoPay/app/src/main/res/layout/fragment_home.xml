@@ -16,7 +16,7 @@
     <GridLayout
         android:layout_marginTop="130px"
         android:layout_width="match_parent"
-        android:layout_height="1700px"
+        android:layout_height="1400px"
         android:columnCount="2"
         android:rowCount="2"
         android:alignmentMode="alignMargins"
