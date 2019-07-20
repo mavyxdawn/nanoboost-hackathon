@@ -9,12 +9,12 @@ public class MockProduct implements ProductInterface {
 
     @Override
     public String imageName() {
-        return "watch.png";
+        return "watch";
     }
 
     @Override
-    public float price() {
-        return 3.99f;
+    public String priceString() {
+        return "₱3.99";
     }
 
     @Override
