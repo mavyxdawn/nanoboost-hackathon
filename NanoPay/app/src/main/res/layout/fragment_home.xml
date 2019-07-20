@@ -10,13 +10,13 @@
         android:layout_height="wrap_content"
         android:text="Pending"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textSize="27sp"/>
 
     <GridLayout
         android:layout_marginTop="130px"
         android:layout_width="match_parent"
-        android:layout_height="1400px"
+        android:layout_height="1450px"
         android:columnCount="2"
         android:rowCount="2"
         android:alignmentMode="alignMargins"
