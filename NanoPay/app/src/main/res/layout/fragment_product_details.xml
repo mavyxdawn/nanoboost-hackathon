@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ProductDetailsFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+
+<!-- TODO: Update blank fragment layout -->
 
     <Button
         android:id="@+id/backButton"
         style="@android:style/Widget.Material.Button"
         android:layout_width="wrap_content"
         android:layout_height="58dp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="15sp"
         android:background="@android:color/transparent"
-        android:text="back"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:text="&lt;"
         android:textSize="36sp" />
 
     <ImageView
@@ -22,49 +25,54 @@
         android:layout_width="match_parent"
         android:layout_height="335dp"
         android:scaleType="centerCrop"
-        tools:src="@tools:sample/avatars[3]" />
+        tools:src="@tools:sample/avatars[3]"
+        android:src ="@drawable/backpack" />
 
     <TextView
         android:id="@+id/productNameTextView"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginTop="330dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="190sp"
         android:text="Nike Dri-FIT Long Sleeve"
         android:textColor="#333"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
 
     <TextView
         android:id="@+id/productDetailsTextView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="120sp"
         android:text="Sleek cut plus superb comfort.\nOrder No: 6878394212\nNewWorks(Lazada)"
-        android:layout_marginTop="360dp"
-        android:textSize="18sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:textColor="#333"/>
+        android:textColor="#333"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/productPriceTextView"
         android:layout_width="120dp"
         android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="55sp"
         android:text="₱999.75"
-        android:textSize="25sp"
-        android:textColor="#333"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginBottom="65dp"/>
+        android:textColor="#00c368"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/buyButton"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Buy"
-        android:height="60dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginLeft="200dp"/>
+        android:height="60sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65sp"
+        android:layout_marginRight="15sp"/>
 
 
-</FrameLayout>
+</RelativeLayout>
