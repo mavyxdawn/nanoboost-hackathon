@@ -110,20 +110,12 @@ public class InboxFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         String tag = view.getTag().toString();
         if (tag.equals("1")) {
-            showPopup("Product Approved", "Your product has been approved by the user and the payment has been credited to your account.");
+            AlertHelper.showPopup(this.getContext(),"Product Approved", "Your product has been approved by the user and the payment has been credited to your account.");
         } else if (tag.equals("2")) {
-            showPopup("Pending Approval", "Your product has been received by the customer and is waiting for thair approval.");
+            AlertHelper.showPopup(this.getContext(),"Pending Approval", "Your product has been received by the customer and is waiting for thair approval.");
         } else if (tag.equals("3")) {
-            showPopup("Replacement Requested", "The user requested a replacement for their product. You must comply with this or no payment will be credited and your item will be withheld.");
+            AlertHelper.showPopup(this.getContext(),"Replacement Requested", "The user requested a replacement for their product. You must comply with this or no payment will be credited and your item will be withheld.");
         }
-    }
-
-    private void showPopup(String title, String message) {
-        new AlertDialog.Builder(this.getContext())
-                .setTitle(title)
-                .setMessage(message)
-                .setPositiveButton(android.R.string.ok, null)
-                .show();
     }
 
     /**
