@@ -106,6 +106,9 @@ public class HomeFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
 
-
+    }
 }
