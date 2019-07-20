@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:tag="0"
                 tools:src="@tools:sample/backgrounds/scenic" />
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:tag="0"
                 tools:src="@tools:sample/backgrounds/scenic" />
 
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:tag="0"
                 tools:src="@tools:sample/backgrounds/scenic" />
 
@@ -191,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:tag="0"
                 tools:src="@tools:sample/backgrounds/scenic" />
 
