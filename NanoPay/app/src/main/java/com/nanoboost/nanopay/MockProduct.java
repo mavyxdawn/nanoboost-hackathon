@@ -2,33 +2,57 @@ package com.nanoboost.nanopay;
 
 public class MockProduct implements ProductInterface {
 
+    private String mProductName,
+    private String mImageName,
+    private String mPriceString,
+    private int mOrderNumber,
+    private String mBuyerName,
+    private int mProductStatus
+
+    public MockProduct (String productName,
+                 String imageName,
+                 String priceString,
+                 int orderNumber,
+                 String buyerName,
+                 int productStatus) {
+        MockProduct instance = new MockProduct();
+        instance.mProductName = productName;
+        instance.mImageName = imageName;
+        instance.mPriceString = priceString;
+        instance.mOrderNumber = orderNumber;
+        instance.mBuyerName = buyerName;
+        instance.mProductStatus = productStatus;
+
+        return instance;
+    }
+
     @Override
     public String productName() {
-        return "Rolex Watch";
+        return mProductName;
     }
 
     @Override
     public String imageName() {
-        return "watch";
+        return mImageName;
     }
 
     @Override
     public String priceString() {
-        return "₱3.99";
+        return mPriceString;
     }
 
     @Override
     public int orderNumber() {
-        return 923012321;
+        return mOrderNumber;
     }
 
     @Override
     public String buyerName() {
-        return "Von Caro";
+        return mBuyerName;
     }
 
     @Override
     public int productStatus() {
-        return 1;
+        return mProductStatus;
     }
 }
