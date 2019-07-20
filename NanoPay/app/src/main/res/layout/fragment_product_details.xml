@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="58dp"
         android:background="@android:color/transparent"
-        android:text="<"
+        android:text="back"
         android:textSize="36sp" />
 
     <ImageView
