@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "NanoPay.db";
-    public static final String TABLE_NAME = "Product Details";
+    public static final String TABLE_NAME = "Product_Details";
     public static final String COL_1 = "Product_Name";
     public static final String COL_2 = "Order_No.";
     public static final String COL_3 = "Date_of_Purchase";
@@ -21,8 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE " + TABLE_NAME + " (Order_No. INTEGER PRIMARY KEY AUTOINCREMENT, Product_Name TEXT," +
-                "Date_of_Purchase DATE, Warranty_Period TEXT, Confirmed? TEXT, For_Return? TEXT)");
+        db.execSQL("CREATE TABLE " + TABLE_NAME + " (Order_No INTEGER, Product_Name TEXT," +
+                "Date_of_Purchase DATE, Warranty_Period TEXT, STATUS INTEGER)");
     }
 
     @Override
