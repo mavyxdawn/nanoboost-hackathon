@@ -64,13 +64,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
 
+    //DatabaseHelper myDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        DatabaseHelper myDB;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-        myDB = new DatabaseHelper(this);
+        //myDB = new DatabaseHelper(this);
+        //myDB.insertData(24,"Watch", "2019-07-20", "7 days", 0, 100000.00, "Nomi Cortez");
+        //myDB.insertData(12,"Backpack", "2019-06-11", "7 days", 0, 1000.00, "Reuben Mercado");
+        //myDB.insertData(32,"Iphone", "2019-07-14", "14 days", 0, 32000.00, "Vanjelyn Roque");
+        //myDB.insertData(55,"Escooter", "2019-06-23", "3 days", 0, 15000.00, "Juls Andrada");
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
