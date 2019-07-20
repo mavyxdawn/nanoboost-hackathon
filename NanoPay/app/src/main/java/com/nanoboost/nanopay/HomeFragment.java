@@ -1,6 +1,7 @@
 package com.nanoboost.nanopay;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -45,6 +46,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public HomeFragment() {
         // Required empty public constructor
     }
+
+    public Boolean isSeller;
 
     /**
      * Use this factory method to create a new instance of
