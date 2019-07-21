@@ -135,6 +135,8 @@ AlertHelper.showPopup(this.getContext(), "Success", "Product has been successful
 
         if (productToDisplay != null) {
 
+            showApproveReject();
+
             ImageView productImageView = getView().findViewById(R.id.productImageView);
             productImageView.setImageResource(getResources().getIdentifier(productToDisplay.imageName(), "drawable", this.getContext().getPackageName()));
 
