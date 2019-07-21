@@ -20,8 +20,7 @@
         android:layout_height="15dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="308dp"
-        android:text="Item name"
+        android:layout_marginBottom="252dp"
         android:textAlignment="center"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/btnProceed"
@@ -35,12 +34,12 @@
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="244dp"
-        android:text="Order Number"
+        android:layout_marginBottom="200dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -49,12 +48,12 @@
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="200dp"
-        android:text="Price"
+        android:layout_marginBottom="164dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -63,12 +62,12 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="156dp"
-        android:text="Date of Purchase"
+        android:layout_marginBottom="116dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -77,12 +76,12 @@
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="112dp"
-        android:text="Warranty Period"
+        android:layout_marginBottom="80dp"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -97,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/warrantyperiod"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintVertical_bias="0.617" />
 
     <Button
         android:id="@+id/btnProceed"
