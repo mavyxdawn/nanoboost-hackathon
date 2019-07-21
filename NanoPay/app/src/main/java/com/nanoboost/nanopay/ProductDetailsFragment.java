@@ -118,6 +118,12 @@ public class ProductDetailsFragment extends Fragment implements View.OnClickList
         void onFragmentInteraction(Uri uri);
     }
 
+    public void OnButtonClicked(View view){
+AlertHelper.showPopup(this.getContext(), "Success", "Product has been successfully purchased!");
+        Button payButton  = (Button) getView().findViewWithTag("payButton");
+        payButton.setVisibility(View.INVISIBLE);
+    }
+
     @Override
     public void onStart() {
         super.onStart();

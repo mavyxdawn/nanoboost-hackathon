@@ -101,9 +101,10 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimary"
+        android:onClick="OnButtonClicked"
+        android:tag="approveButton"
         android:text="Approve Product"
-        android:visibility="invisible"
-        android:tag="approveButton"/>
+        android:visibility="invisible" />
 
 
 
