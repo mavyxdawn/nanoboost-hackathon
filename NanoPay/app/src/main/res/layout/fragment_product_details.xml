@@ -26,7 +26,7 @@
         android:layout_height="335dp"
         android:scaleType="centerCrop"
         tools:src="@tools:sample/avatars[3]"
-        android:src ="@drawable/backpack" />
+        android:src ="@drawable/longsleeve" />
 
     <TextView
         android:id="@+id/productNameTextView"
@@ -85,7 +85,8 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimaryNegation"
-        android:text="Request a replacement" />
+        android:text="Request a replacement"
+        android:visibility="invisible"/>
 
 
     <Button
@@ -98,7 +99,8 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimary"
-        android:text="Approve Product" />
+        android:text="Approve Product"
+        android:visibility="invisible"/>
 
 
 
