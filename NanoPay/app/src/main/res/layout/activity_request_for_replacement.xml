@@ -17,14 +17,14 @@
     <TextView
         android:id="@+id/itemname"
         android:layout_width="162dp"
-        android:layout_height="24dp"
+        android:layout_height="15dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="308dp"
         android:text="Item name"
         android:textAlignment="center"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,7 +39,7 @@
         android:text="Order Number"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,21 +53,21 @@
         android:text="Price"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/dateofpurchase"
         android:layout_width="213dp"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="156dp"
         android:text="Date of Purchase"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -81,7 +81,7 @@
         android:text="Warranty Period"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -93,27 +93,26 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/Buy"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/warrantyperiod"
         app:layout_constraintVertical_bias="0.393" />
 
     <Button
-        android:id="@+id/Buy"
+        android:id="@+id/btnProceed"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:height="60dp"
         android:text="Proceed"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.816" />
 
 
 
