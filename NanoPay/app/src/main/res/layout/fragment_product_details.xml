@@ -73,8 +73,9 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimary"
-        android:text="Buy"
-        android:tag="payButton"/>
+        android:onClick="OnButtonClicked"
+        android:tag="payButton"
+        android:text="Buy" />
 
     <Button
         android:id="@+id/requestButton"
@@ -101,7 +102,6 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimary"
-        android:onClick="OnButtonClicked"
         android:tag="approveButton"
         android:text="Approve Product"
         android:visibility="invisible" />
