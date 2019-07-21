@@ -3,6 +3,8 @@ package com.nanoboost.nanopay;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
@@ -345,6 +347,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             if (success) {
                 Intent homeNavigationIntent = new Intent(getBaseContext(), HomeNavigationActivity.class);
                 Boolean isSeller = mEmailView.getText().toString().contains("seller");
+                SharedPreferences preferences = getBaseContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putBoolean("isSeller", isSeller);
+                editor.commit();
                 homeNavigationIntent.putExtra("isSeller", isSeller);
                 startActivity(homeNavigationIntent);
 
