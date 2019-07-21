@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 /**
@@ -30,6 +32,8 @@ public class ProductDetailsFragment extends Fragment implements View.OnClickList
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    public ProductInterface productToDisplay;
 
     public ProductDetailsFragment() {
         // Required empty public constructor
@@ -122,6 +126,20 @@ public class ProductDetailsFragment extends Fragment implements View.OnClickList
         int resID = getResources().getIdentifier(buttonID, "id", getActivity().getApplicationContext().getPackageName());
         Button button = ((Button) getView().findViewById(resID));
         button.setOnClickListener(this);
+
+        if (productToDisplay != null) {
+
+            ImageView productImageView = getView().findViewById(R.id.productImageView);
+            productImageView.setImageResource(getResources().getIdentifier(productToDisplay.imageName(), "drawable", this.getContext().getPackageName()));
+
+            TextView productNameView = getView().findViewById(R.id.productNameTextView);
+            productNameView.setText(productToDisplay.productName());
+            TextView productDetailsView = getView().findViewById(R.id.productDetailsTextView);
+            productDetailsView.setText(productToDisplay.buyerName() + "\nOrder #: " + productToDisplay.orderNumber());
+
+            TextView priceView = getView().findViewById(R.id.productPriceTextView);
+            priceView.setText(productToDisplay.priceString());
+        }
     }
 
 

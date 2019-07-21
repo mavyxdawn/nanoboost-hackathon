@@ -148,7 +148,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
 
     public void OnPendingItemPressed(View view) {
-        Fragment newFragment = new ProductDetailsFragment();
+        ProductDetailsFragment newFragment = new ProductDetailsFragment();
+        newFragment.productToDisplay = new MockProduct("Backpack", "backpack", "₱1,000", 12, "Reuben Mercado", 0);
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
 
         // Replace whatever is in the fragment_container view with this fragment,
