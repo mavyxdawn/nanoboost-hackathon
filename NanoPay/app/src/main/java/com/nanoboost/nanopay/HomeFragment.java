@@ -75,6 +75,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+        isSeller = this.getContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).getBoolean("isSeller", false);
     }
 
     @Override

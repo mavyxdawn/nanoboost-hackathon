@@ -54,7 +54,6 @@ public class HomeNavigationActivity extends AppCompatActivity implements HomeFra
         if (savedInstanceState == null) {
             HomeFragment homeFragment = new HomeFragment();
             isSeller = getIntent().getBooleanExtra("isSeller", false);
-            homeFragment.isSeller = isSeller;
             Fragment initialFragment;
             if (isSeller) {
                 initialFragment = homeFragment;
