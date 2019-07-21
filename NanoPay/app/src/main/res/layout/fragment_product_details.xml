@@ -65,14 +65,15 @@
 
     <Button
         android:id="@+id/buyButton"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="Buy"
-        android:height="60sp"
+        android:layout_width="160dp"
+        android:layout_height="50sp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginRight="15sp"
         android:layout_marginBottom="65sp"
-        android:layout_marginRight="15sp"/>
+        android:height="60sp"
+        android:background="@color/colorPrimary"
+        android:text="Buy" />
 
     <Button
         android:id="@+id/requestButton"
