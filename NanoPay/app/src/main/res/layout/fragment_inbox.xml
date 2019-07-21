@@ -133,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="bottom"
-                android:background="@android:color/holo_orange_light"
+                android:background="#FFA735"
                 android:tag="2"
                 android:text="Pending Acceptance"
                 android:textSize="14dp" />
@@ -171,7 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="bottom"
-                android:background="@android:color/holo_orange_light"
+                android:background="#FFA735"
                 android:tag="2"
                 android:text="Pending Acceptance"
                 android:textSize="14dp" />
@@ -209,7 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="bottom"
-                android:background="@android:color/holo_red_light"
+                android:background="#E9004B"
                 android:tag="3"
                 android:text="Requesting Replacement"
                 android:textSize="14dp" />
@@ -247,7 +247,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_gravity="bottom"
-                android:background="@android:color/holo_red_light"
+                android:background="#E9004B"
                 android:text="Requesting Replacement"
                 android:textSize="14dp" />
 
