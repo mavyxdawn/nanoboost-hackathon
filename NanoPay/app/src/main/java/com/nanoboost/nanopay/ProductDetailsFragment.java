@@ -123,4 +123,15 @@ public class ProductDetailsFragment extends Fragment implements View.OnClickList
         Button button = ((Button) getView().findViewById(resID));
         button.setOnClickListener(this);
     }
+
+
+    public void showApproveReject() {
+        Button approveButton = (Button) getView().findViewWithTag("approveButton");
+        approveButton.setVisibility(View.VISIBLE);
+        Button rejectButton = (Button) getView().findViewWithTag("rejectButton");
+        rejectButton.setVisibility(View.VISIBLE);
+        Button payButton  = (Button) getView().findViewWithTag("payButton");
+        payButton.setVisibility(View.INVISIBLE);
+
+    }
 }

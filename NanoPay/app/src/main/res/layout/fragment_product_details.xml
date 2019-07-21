@@ -73,7 +73,8 @@
         android:layout_marginBottom="65sp"
         android:height="60sp"
         android:background="@color/colorPrimary"
-        android:text="Buy" />
+        android:text="Buy"
+        android:tag="payButton"/>
 
     <Button
         android:id="@+id/requestButton"
@@ -86,7 +87,8 @@
         android:height="60sp"
         android:background="@color/colorPrimaryNegation"
         android:text="Request a replacement"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:tag="rejectButton"/>
 
 
     <Button
@@ -100,7 +102,8 @@
         android:height="60sp"
         android:background="@color/colorPrimary"
         android:text="Approve Product"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:tag="approveButton"/>
 
 
 
